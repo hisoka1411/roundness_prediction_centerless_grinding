@@ -58,3 +58,18 @@ Beyond the variable process parameters, nine machine-specific parameters remain 
 ### Data generation approach
 To investigate the relationship between process parameters and workpiece quality, a high-fidelity mathematical model was employed. This model, detailed in the work of Cui et al. (2014), captures the complex physics of the centerless grinding process. The model was used to generate a comprehensive dataset for this project, with the ultimate goal of developing a regression model capable of predicting workpiece roundness based on the twelve process parameters.
 The use of a high-fidelity model for data generation ensures consistent and physically valid data points while allowing exploration of a wide range of operating conditions that might be impractical or costly to test in a physical setup.
+
+Ecco un paragrafo da aggiungere al README per spiegare l'ordine in cui leggere il codice:  
+
+---
+
+## Code structure and reading order  
+To facilitate understanding and navigation, the code is organized into sequential steps that reflect the standard machine learning workflow. Readers are encouraged to follow the notebooks in the following order:  
+
+1. **Data inspection and visualization** – This initial step explores the dataset, providing statistical summaries and visualizations to understand key distributions, correlations, and potential anomalies in the data.  
+2. **Data preprocessing** – This phase covers data cleaning, handling of missing values (if any), feature selection, and transformations required to prepare the dataset for modeling.  
+3. **Modeling phase** – Here, multiple regression models are trained and evaluated to determine the most effective approach for predicting workpiece roundness.  
+   - **Modeling pipeline** – The modeling workflow is structured using Scikit-Learn pipelines to ensure a reproducible and modular implementation, integrating preprocessing steps and model training into a single framework.  
+4. **Hyperparameter optimization** *(work in progress)* – Ongoing efforts focus on fine-tuning the top-performing models to enhance predictive performance and generalization capabilities.  
+
+By following this structure, users can progressively build an understanding of the dataset, the preprocessing techniques applied, and the modeling choices made throughout the project.
